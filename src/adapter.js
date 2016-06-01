@@ -117,7 +117,8 @@ var createMochaReporterConstructor = function (tc, pathname) {
         skipped: skipped,
         time: skipped ? 0 : test.duration,
         log: test.$errors || [],
-        assertionErrors: test.$assertionErrors || []
+        assertionErrors: test.$assertionErrors || [],
+        test: test
       }
 
       var pointer = test.parent
